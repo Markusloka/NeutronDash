@@ -13,6 +13,12 @@ public class LogicScript : MonoBehaviour
 
     }
 
+
+    public void restartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     public void addScore(int scoreToAdd)
     {
             playerScore = playerScore + scoreToAdd;

@@ -17,10 +17,7 @@ public class Playercollision : MonoBehaviour
             gameOver();
         }
 }
-     public void restartGame()
-     {
-         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-     }
+     
      public void gameOver()
      {
          gameOverScreen.SetActive(true);

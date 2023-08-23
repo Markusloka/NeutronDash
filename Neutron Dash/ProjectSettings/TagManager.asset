@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Logic
   - Enemys
+  - Rightwall
+  - RightWall
+  - LeftWall
   layers:
   - Default
   - TransparentFX

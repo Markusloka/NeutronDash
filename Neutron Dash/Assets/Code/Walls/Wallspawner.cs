@@ -10,6 +10,7 @@ public class Wallspawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        spawnWall();
     }
 
     // Update is called once per frame

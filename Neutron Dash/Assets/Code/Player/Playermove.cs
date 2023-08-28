@@ -25,10 +25,12 @@ public class Playermove : MonoBehaviour
             if (isTouchingRightWall)
             {
                 myRigidbody.velocity = Vector2.left * playerJump;
+                isTouchingRightWall = false;
             }
             else if (isTouchingLeftWall)
             {
                 myRigidbody.velocity = Vector2.right * playerJump;
+                isTouchingLeftWall = false;
             }
         }
     }
@@ -51,8 +53,8 @@ public class Playermove : MonoBehaviour
     {
         if (collision.collider.CompareTag("RightWall") || collision.collider.CompareTag("LeftWall"))
         {
-            isTouchingRightWall = false;
-            isTouchingLeftWall = false;
+            //isTouchingRightWall = false;
+            //isTouchingLeftWall = false;
         }
     }
 

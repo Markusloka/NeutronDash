@@ -949,7 +949,7 @@ GameObject:
   - component: {fileID: 1555614082}
   - component: {fileID: 1555614083}
   - component: {fileID: 1555614084}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1107,7 +1107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc1701b2182e0847b48a93b8a4409c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerJump: 25.1
+  playerJump: 10.8
   myRigidbody: {fileID: 1555614076}
 --- !u!122 &1555614082
 Halo:

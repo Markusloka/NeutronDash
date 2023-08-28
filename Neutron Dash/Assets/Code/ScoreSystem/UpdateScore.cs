@@ -5,13 +5,11 @@ using UnityEngine;
 public class UpdateScore : MonoBehaviour
 {
     public LogicScript logic;
-    public Playermove playerIsAlive;
-    // Start is called before the first frame update
+     // Start is called before the first frame update
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
-        playerIsAlive = GameObject.FindGameObjectWithTag("Player").GetComponent<Playermove>();
-    }
+     }
 
     // Update is called once per frame
     void Update()
@@ -20,9 +18,9 @@ public class UpdateScore : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 3 && playerIsAlive)
+        if (collision.gameObject.layer == 3)
         {
-            logic.addScore(1);
+            logic.addScore(10);
         }
     }
 }
